@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutHome() {
   return (
-    <section className="flex items-stretch gap-2 max-md:flex-col-reverse lg:gap-4">
+    <section className="flex items-stretch gap-2 max-md:flex-col-reverse lg:gap-4 lg:h-[75vh]">
       <div className="w-full lg:h-full lg:w-1/2 md:h-full">
         <Image
           src="/images/hero.jpg"
@@ -23,8 +23,7 @@ export default function AboutHome() {
           Management, advanced inspection technologies, and technical services,
           we help operators safeguard critical assets, extend operational life,
           and ensure compliance with global standards. Trusted by leading energy
-          companies, we deliver safe, reliable, and innovative solutions that
-          power sustainable operations.
+          companies, we deliver safe, reliable, and innovative solutions that power sustainable operations.
         </p>
         <div className="mt-8 flex flex-col lg:flex-row">
           <Link
