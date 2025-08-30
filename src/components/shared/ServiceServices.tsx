@@ -1,19 +1,10 @@
 import { ShieldCheck, Search, Settings } from "lucide-react";
 import Link from "next/link";
 
-export default function ServicesHome() {
-  return (
-    <section className="bg-white rounded-2xl py-12 px-4 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-4">
-          Our Services
-        </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Comprehensive solutions for oil, gas, and energy infrastructure
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+export default function ServiceServices() {
+    return (
+        <section className="bg-white rounded-2xl py-12 px-4 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Service Card 1 - Asset Integrity Management */}
         <div className="group bg-blue-100 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-blue-200">
           <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -35,7 +26,7 @@ export default function ServicesHome() {
             to manage asset risks and extend operational life, whether onshore,
             offshore, or subsea.
           </p>
-          <Link href="/services/asset-integrity-management">
+          <Link href="/services/inspection-services">
             <button className="w-full bg-primary text-white font-semibold py-3 px-6 rounded-xl hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
               Read More
             </button>
@@ -94,6 +85,6 @@ export default function ServicesHome() {
           </Link>
         </div>
       </div>
-    </section>
-  );
+        </section>
+    )
 }

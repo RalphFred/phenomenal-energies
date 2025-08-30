@@ -1,11 +1,7 @@
 export default function AboutBio() {
   return (
     <section className="bg-white rounded-2xl py-12 px-4 lg:px-8">
-      <div className="">
-        <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">
-          About Phenomenal Energies
-        </h2>
-        
+      <div className="">        
         <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
           <p className="mb-6">
             Phenomenal Energies is a leading provider of comprehensive energy infrastructure solutions, 
