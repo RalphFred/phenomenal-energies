@@ -44,7 +44,7 @@ export default function HssePage() {
                 <div className="bg-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Shield className="text-white w-8 h-8" />
                 </div>
-                <p className="text-2xl font-bold text-green-600">"Nobody Gets Hurt"</p>
+                <p className="text-2xl font-bold text-green-600">&ldquo;Nobody Gets Hurt&rdquo;</p>
               </div>
             </div>
 

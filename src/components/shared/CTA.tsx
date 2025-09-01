@@ -18,8 +18,8 @@ export default function CTA() {
             Ready to Transform Your Energy Operations?
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Let's create something exceptional, together. Whether you're optimizing existing infrastructure, 
-            implementing new safety protocols, or scaling your operations, we're the team you need.
+            Let&apos;s create something exceptional, together. Whether you&apos;re optimizing existing infrastructure, 
+            implementing new safety protocols, or scaling your operations, we&apos;re the team you need.
           </p>
         </div>
 

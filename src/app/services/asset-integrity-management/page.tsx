@@ -1,4 +1,4 @@
-import { Shield, Eye, Zap, Wrench, Monitor, Database, ArrowRight } from "lucide-react";
+import { Shield, Eye, Wrench, Monitor, Database, ArrowRight } from "lucide-react";
 
 export default function AssetIntegrityManagement() {
   return (

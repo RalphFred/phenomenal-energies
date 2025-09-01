@@ -1,4 +1,4 @@
-import { Search, Eye, CheckCircle, Settings, ArrowRight, Shield, Database, Zap } from "lucide-react";
+import { Search, Eye, CheckCircle, Settings, ArrowRight, Shield, Database } from "lucide-react";
 
 export default function InspectionServices() {
   return (
@@ -27,7 +27,7 @@ export default function InspectionServices() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Comprehensive Inspection Solutions</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Our inspection services provide clients with reliable, standards-driven verification at every stage 
-            of a project. Whether it is monitoring a vendor's manufacturing process, verifying compliance at 
+            of a project. Whether it is monitoring a vendor&apos;s manufacturing process, verifying compliance at 
             a construction site, or ensuring the accuracy of instruments and equipment, we deliver the assurance 
             needed for safe and successful operations.
           </p>

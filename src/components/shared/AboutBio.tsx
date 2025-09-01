@@ -6,7 +6,7 @@ export default function AboutBio() {
           <p className="mb-6">
             Phenomenal Energies is a leading provider of comprehensive energy infrastructure solutions, 
             specializing in asset integrity management, inspection services, and engineering solutions. 
-            Founded with a vision to revolutionize safety and efficiency in the energy sector, we've 
+            Founded with a vision to revolutionize safety and efficiency in the energy sector, we&apos;ve 
             built our reputation on delivering exceptional results that exceed industry standards.
           </p>
           
@@ -18,14 +18,14 @@ export default function AboutBio() {
           </p>
           
           <p className="mb-6">
-            From offshore platforms to onshore facilities, we've successfully completed projects 
+            From offshore platforms to onshore facilities, we&apos;ve successfully completed projects 
             across Nigeria and beyond. Our commitment to innovation drives us to continuously 
             integrate cutting-edge technologies, including advanced NDT techniques, 3D modeling, 
             and AI-powered monitoring systems.
           </p>
           
           <p>
-            At Phenomenal Energies, we don't just provide services – we build lasting partnerships 
+            At Phenomenal Energies, we don&apos;t just provide services – we build lasting partnerships 
             that help our clients achieve their goals while maintaining the highest standards of 
             safety, quality, and environmental responsibility.
           </p>

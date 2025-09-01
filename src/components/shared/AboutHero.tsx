@@ -8,7 +8,7 @@ export default function AboutHero() {
           More Than an Energy Company
         </h1>
         <p className="lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-          Discover how we've helped energy companies enhance safety, optimize operations, 
+          Discover how we&apos;ve helped energy companies enhance safety, optimize operations, 
           and achieve excellence across Nigeria and beyond. Our commitment to innovation 
           and reliability sets us apart in the energy sector.
         </p>

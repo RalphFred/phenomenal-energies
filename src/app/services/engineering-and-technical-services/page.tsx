@@ -196,7 +196,7 @@ export default function EngineeringAndTechnicalServices() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Traceability Program</h4>
                   <p className="text-gray-700 text-sm">
-                    Even "untraceable materials" are managed efficiently, helping clients save money, 
+                    Even &ldquo;untraceable materials&rdquo; are managed efficiently, helping clients save money, 
                     avoid waste, and meet stringent industry standards with confidence.
                   </p>
                 </div>
