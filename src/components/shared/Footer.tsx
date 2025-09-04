@@ -140,7 +140,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-1">Ready to work with us?</h4>
-              <p className="text-gray-600 text-sm">Let's discuss your project requirements.</p>
+              <p className="text-gray-600 text-sm">Let&apos;s discuss your project requirements.</p>
             </div>
             <Link 
               href="/contact" 
