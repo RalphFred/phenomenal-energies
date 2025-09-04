@@ -3,6 +3,7 @@ import AboutBio from "@/components/shared/AboutBio";
 import AboutTeam from "@/components/shared/AboutTeam";
 import Why from "@/components/shared/Why";
 import Testimonials from "@/components/shared/Testimonials";
+import CTA from "@/components/shared/CTA";
 
 export default function AboutPage() {
     return (
@@ -12,6 +13,7 @@ export default function AboutPage() {
             <AboutTeam />
             <Why />
             <Testimonials />
+            <CTA />
         </div>
     )
 }

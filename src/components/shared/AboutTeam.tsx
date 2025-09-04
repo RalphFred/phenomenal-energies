@@ -1,4 +1,5 @@
 import { Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutTeam() {
   const leadership = [
@@ -6,7 +7,7 @@ export default function AboutTeam() {
       name: "Eche Chuka Benjamin",
       position: "Company Chairman",
       bio: "Graduated with honours from FUTO in Applied Geoscience and MSc in Petroleum Geology from University of Port Harcourt. Retired from ExxonMobil as Senior Manager Development Geosciences after 25 years. Expert in Oilwell engineering, reservoir studies and management. Currently Managing Director of Marine Flagship Services Limited.",
-      image: "/team/chairman.jpg",
+      image: "/images/leader1.jpg",
       linkedin: "#",
       email: "benjamin@phenomenalenergies.com"
     },
@@ -14,7 +15,7 @@ export default function AboutTeam() {
       name: "Engr. Onyema Abel Nwobodo",
       position: "Managing Director",
       bio: "Chemical Engineering graduate from University of Benin with MSc in Asset Integrity Management from Robert Gordon University Scotland and MBA from Lagos Business School. 10 years with ExxonMobil Nigeria managing facility integrity operations. Member of COREN, NSE, SPE, NACE, and ASME.",
-      image: "/team/md.jpg",
+      image: "/images/leader2.jpg",
       linkedin: "#",
       email: "abel@phenomenalenergies.com"
     },
@@ -22,7 +23,7 @@ export default function AboutTeam() {
       name: "Marina Hampton",
       position: "Technical Consultant",
       bio: "MSc Mechanical Engineering with over 25 years experience in Oil & Gas industry across Europe, Middle East, Africa and Asia. Previously Materials and Welding Consultant with ExxonMobil in West Africa. Expert in materials, welding engineering and international project management.",
-      image: "/team/technical.jpg",
+      image: "/images/leader3.png",
       linkedin: "#",
       email: "marina@phenomenalenergies.com"
     },
@@ -30,7 +31,7 @@ export default function AboutTeam() {
       name: "Thavasi Muthu",
       position: "Inspection Consultant/Advisor",
       bio: "Mechanical Engineering graduate with ASNT NDT Level-III certifications. Over 22 years experience in Plant/Projects Fabrication and inspection across multiple countries. Previously Project Manager/NDE Advisor with Mobil Producing Nigeria for 8 years. Co-authored 'Practical NDT' and has 18 international publications.",
-      image: "/team/inspection.jpg",
+      image: "/images/leader4.png",
       linkedin: "#",
       email: "muthu@phenomenalenergies.com"
     }
@@ -53,27 +54,13 @@ export default function AboutTeam() {
             {/* Profile Image */}
             <div className="relative mb-6">
               <div className="w-32 h-32 mx-auto rounded-full overflow-hidden bg-blue-100 border-4 border-blue-200 group-hover:border-primary transition-colors duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                  <span className="text-4xl font-semibold text-blue-600">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
-              </div>
-              
-              {/* Social Links */}
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a 
-                  href={member.linkedin}
-                  className="bg-primary text-white p-2 rounded-full hover:bg-primary/90 transition-colors duration-300"
-                >
-                  <Linkedin className="w-4 h-4" />
-                </a>
-                <a 
-                  href={`mailto:${member.email}`}
-                  className="bg-primary text-white p-2 rounded-full hover:bg-primary/90 transition-colors duration-300"
-                >
-                  <Mail className="w-4 h-4" />
-                </a>
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
