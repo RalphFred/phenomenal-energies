@@ -50,16 +50,21 @@ export default function ServicesHome() {
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             Inspection Services
           </h3>
+          <div className="mb-4">
+            <span className="inline-block bg-primary/10 text-primary font-semibold px-3 py-1 rounded-full text-sm mb-3">
+              Third Party Inspections
+            </span>
+          </div>
           <p className="text-gray-700 leading-relaxed mb-6 overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 6, WebkitBoxOrient: 'vertical' }}>
             We conduct data driven inspections that meet or exceed industry
             standards at all stages of a project or operational life to ensure
-            equipment integrity and availability. From third-party and source
-            inspections to calibration services, we verify that equipment,
+            equipment integrity and availability. Our comprehensive inspection
+            services include third-party and source inspections, calibration
+            services, and vendor compliance verification. We verify that equipment,
             materials, and processes satisfy specifications before they enter
-            the field. By confirming vendor compliance, observing factory
-            acceptance tests, and ensuring measurement accuracy, we provide the
-            confidence required for safe, efficient, and effective field
-            operations.
+            the field. By observing factory acceptance tests and ensuring
+            measurement accuracy, we provide the confidence required for safe,
+            efficient, and effective field operations.
           </p>
           <Link href="/services/inspection-services">
             <button className="w-full bg-primary text-white font-semibold py-3 px-6 rounded-xl hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">

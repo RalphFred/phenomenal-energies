@@ -13,6 +13,18 @@ export default function Why() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+        {/* Innovation */}
+        <div className="text-center group">
+          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Zap className="text-white w-8 h-8" />
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Innovation</h3>
+          <p className="text-gray-700 leading-relaxed">
+            Cutting-edge technologies and forward-thinking solutions that keep
+            you ahead of industry standards.
+          </p>
+        </div>
+        
         {/* Excellence */}
         <div className="text-center group">
           <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -25,6 +37,20 @@ export default function Why() {
           </p>
         </div>
 
+         {/* Global Reach */}
+        <div className="text-center group">
+          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <Globe className="text-white w-8 h-8" />
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            Global Reach
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            Worldwide presence and local expertise to serve your needs wherever
+            your operations take you.
+          </p>
+        </div>
+        
         {/* Reliability */}
         <div className="text-center group">
           <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -49,31 +75,9 @@ export default function Why() {
           </p>
         </div>
 
-        {/* Innovation */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Zap className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Innovation</h3>
-          <p className="text-gray-700 leading-relaxed">
-            Cutting-edge technologies and forward-thinking solutions that keep
-            you ahead of industry standards.
-          </p>
-        </div>
+        
 
-        {/* Global Reach */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Globe className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Global Reach
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            Worldwide presence and local expertise to serve your needs wherever
-            your operations take you.
-          </p>
-        </div>
+       
 
         {/* Timely Delivery */}
         <div className="text-center group">
