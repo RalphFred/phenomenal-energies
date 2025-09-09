@@ -14,7 +14,7 @@ export default function AboutHero() {
         </p>
       </div>
       <div className="mt-12">
-        <Image src="/images/img1.jpg" alt="About Hero" width={1000} height={1000} className="rounded-2xl w-full h-120 object-cover" />
+        <Image src="/images/img1.jpg" alt="About Hero" width={1000} height={1000} className="rounded-2xl w-full h-120 lg:h-150 object-cover" />
       </div>
     </section>
   );

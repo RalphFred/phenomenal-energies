@@ -11,7 +11,7 @@ export default function Hero() {
           Engineering Safety. Powering Reliability.
           </h1>
           <p className="text-lg mb-4 text-gray-600">
-          At Phenomenal Energy, we deliver world-class engineering, inspection, and maintenance solutions that keep oil and gas facilities safe, reliable, and efficient. With proven expertise, cutting-edge technology, and a zero-incident safety culture, we help our clients extend asset life, minimize risks, and power sustainable operations onshore, offshore, and subsea.
+          At Phenomenal Energy, we deliver world-class engineering, inspection, and maintenance solutions that keep oil and gas facilities safe, reliable, and efficient. With proven expertise, cutting-edge technology, and a flawless execution, we help our clients extend asset life, minimize risks, and power sustainable operations onshore, offshore, and subsea.
           </p>
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-6 max-md:w-full md:justify-start justify-around my-4 md:my-6">
             <Link href="/contact/#contact" className="flex justify-center items-center gap-2 bg-primary text-white px-8 py-3 font-semibold rounded-lg">

@@ -29,7 +29,7 @@ export default function HssePage() {
             <div className="bg-green-100 rounded-xl p-3">
               <Target className="text-green-600 w-6 h-6" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">Safety as a Core Value</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Nobody Gets Hurt</h2>
           </div>
           
           <p className="text-gray-700 leading-relaxed mb-6">

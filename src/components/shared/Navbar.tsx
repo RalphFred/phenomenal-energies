@@ -25,7 +25,7 @@ export default function NavBar() {
 
   return (
     <nav className="flex justify-between items-center p-3 bg-white rounded-2xl md:px-12 sticky top-4 z-40 mb-2 md:mb-4">
-      <Link href="/" className="z-60">
+      <Link href="/" className="z-60 flex items-center gap-2">
         <Image
           src="/images/logo.jpeg"
           alt="Logo"
@@ -33,6 +33,7 @@ export default function NavBar() {
           height={40}
           className="size-12 z-60"
           />
+          <h1 className="text-xl text-primary leading-5 font-semibold">Phenomenal <br /> Energy</h1>
       </Link>
 
       {/* Desktop Nav Links */}

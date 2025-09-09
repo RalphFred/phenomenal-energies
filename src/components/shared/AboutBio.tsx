@@ -4,8 +4,8 @@ export default function AboutBio() {
       <div className="">        
         <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
           <p className="mb-6">
-            Phenomenal Energies is a leading provider of comprehensive energy infrastructure solutions, 
-            specializing in asset integrity management, inspection services, and engineering solutions. 
+            Phenomenal Energy is a leading provider of comprehensive energy infrastructure solutions, 
+            specializing in <span className="font-semibold">asset integrity management</span>, <span className="font-semibold">third party inspection services</span>, and <span className="font-semibold">engineering and technical services</span>. 
             Founded with a vision to revolutionize safety and efficiency in the energy sector, we&apos;ve 
             built our reputation on delivering exceptional results that exceed industry standards.
           </p>
@@ -25,7 +25,7 @@ export default function AboutBio() {
           </p>
           
           <p>
-            At Phenomenal Energies, we don&apos;t just provide services – we build lasting partnerships 
+            At Phenomenal Energy, we don&apos;t just provide services – we build lasting partnerships 
             that help our clients achieve their goals while maintaining the highest standards of 
             safety, quality, and environmental responsibility.
           </p>

@@ -14,11 +14,11 @@ export default function ServicesHero() {
       </div>
       <div className="mt-12">
         <Image 
-          src="/images/hero.jpg" 
-          alt="Phenomenal Energies Services" 
+          src="/images/img4.jpg" 
+          alt="Phenomenal Energy Services" 
           width={1000} 
           height={1000} 
-          className="rounded-2xl w-full h-120 object-cover" 
+          className="rounded-2xl w-full h-120 lg:h-150 object-cover" 
         />
       </div>
     </section>
