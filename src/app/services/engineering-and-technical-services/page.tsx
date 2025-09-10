@@ -1,7 +1,17 @@
+"use client";
+
 import CTA from "@/components/shared/CTA";
 import { Settings, Anchor, Database, Zap, ArrowRight, CheckCircle, Shield, Eye } from "lucide-react";
+import { useState } from "react";
 
 export default function EngineeringAndTechnicalServices() {
+  const [showEngInstr, setShowEngInstr] = useState<boolean>(false);
+  const [showRopeAccess, setShowRopeAccess] = useState<boolean>(false);
+  const [showMaterials, setShowMaterials] = useState<boolean>(false);
+  const [showRotating, setShowRotating] = useState<boolean>(false);
+  const [showLifecycle, setShowLifecycle] = useState<boolean>(false);
+  const [showRisk, setShowRisk] = useState<boolean>(false);
+  const [showInnovation, setShowInnovation] = useState<boolean>(false);
   return (
     <div className="min-h-screen space-y-4">
       {/* Hero Section */}
@@ -40,281 +50,254 @@ export default function EngineeringAndTechnicalServices() {
 
         {/* Engineering & Instrumentation Solutions */}
         <section className="bg-white rounded-2xl p-8">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="bg-blue-100 rounded-xl p-3">
-              <Settings className="text-blue-600 w-6 h-6" />
+          <button
+            type="button"
+            className="w-full text-left flex items-center justify-between mb-4"
+            onClick={() => setShowEngInstr(v => !v)}
+          >
+            <div className="flex items-center gap-4">
+              <div className="bg-blue-100 rounded-xl p-3">
+                <Settings className="text-blue-600 w-6 h-6" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900">Engineering & Instrumentation Solutions</h2>
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">Engineering & Instrumentation Solutions</h2>
-          </div>
-          
-          <p className="text-gray-700 leading-relaxed mb-8">
-            We provide specialized engineering and instrumentation services that support asset performance and integrity, 
-            delivering design and integration solutions for piping, process equipment, and control systems.
-          </p>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Left Column */}
-            <div className="bg-blue-50 rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Core Capabilities</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  Piping system design and integration
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  Process equipment optimization
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  Control systems integration
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  System performance optimization
-                </li>
-              </ul>
-            </div>
-
-            {/* Right Column */}
-            <div className="bg-green-50 rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Performance Focus</h3>
-              <p className="text-gray-700 mb-4">
-                We focus on optimizing system performance, ensuring that all equipment runs safely, efficiently, 
-                and in line with operational requirements.
+            <span className="text-gray-500">{showEngInstr ? "−" : "+"}</span>
+          </button>
+          {showEngInstr && (
+            <>
+              <p className="text-gray-700 leading-relaxed mb-8">
+                We provide specialized engineering and instrumentation services that support asset performance and integrity,
+                delivering design and integration solutions for piping, process equipment, and control systems.
               </p>
-              <p className="text-sm text-gray-600">
-                Through these services, we bridge the gap between engineering design and real-world field performance.
-              </p>
-            </div>
-          </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Left Column */}
+                <div className="bg-blue-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Core Capabilities</h3>
+                  <ul className="space-y-3 text-gray-700">
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />Piping system design and integration</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />Process equipment optimization</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />Control systems integration</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />System performance optimization</li>
+                  </ul>
+                </div>
+                {/* Right Column */}
+                <div className="bg-green-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Performance Focus</h3>
+                  <p className="text-gray-700 mb-4">We focus on optimizing system performance, ensuring that all equipment runs safely, efficiently, and in line with operational requirements.</p>
+                  <p className="text-sm text-gray-600">Through these services, we bridge the gap between engineering design and real-world field performance.</p>
+                </div>
+              </div>
+            </>
+          )}
         </section>
 
         {/* Rope Access Support */}
         <section className="bg-white rounded-2xl p-8">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="bg-green-100 rounded-xl p-3">
-              <Anchor className="text-green-600 w-6 h-6" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">Rope Access Support</h2>
-          </div>
-          
-          <p className="text-gray-700 leading-relaxed mb-8">
-            When inspections or maintenance must be carried out in hard-to-reach locations, we provide safe 
-            and efficient rope access solutions.
-          </p>
-
-          <div className="bg-green-50 rounded-2xl p-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Certified Technicians</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="text-green-600 w-5 h-5" />
-                    Nigerian Level 1-3 Rope Access technicians
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="text-green-600 w-5 h-5" />
-                    ASNT certified professionals
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="text-green-600 w-5 h-5" />
-                    Safety-focused approach
-                  </li>
-                </ul>
+          <button
+            type="button"
+            className="w-full text-left flex items-center justify-between mb-4"
+            onClick={() => setShowRopeAccess(v => !v)}
+          >
+            <div className="flex items-center gap-4">
+              <div className="bg-green-100 rounded-xl p-3">
+                <Anchor className="text-green-600 w-6 h-6" />
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Applications</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-center gap-2">
-                    <ArrowRight className="text-green-600 w-4 h-4" />
-                    Hard-to-reach inspections
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <ArrowRight className="text-green-600 w-4 h-4" />
-                    Maintenance operations
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <ArrowRight className="text-green-600 w-4 h-4" />
-                    Emergency repairs
-                  </li>
-                </ul>
-              </div>
+              <h2 className="text-3xl font-bold text-gray-900">Rope Access Support</h2>
             </div>
-          </div>
+            <span className="text-gray-500">{showRopeAccess ? "−" : "+"}</span>
+          </button>
+          {showRopeAccess && (
+            <>
+              <p className="text-gray-700 leading-relaxed mb-8">When inspections or maintenance must be carried out in hard-to-reach locations, we provide safe and efficient rope access solutions.</p>
+              <div className="bg-green-50 rounded-2xl p-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Certified Technicians</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-center gap-2"><CheckCircle className="text-green-600 w-5 h-5" />Nigerian Level 1-3 Rope Access technicians</li>
+                      <li className="flex items-center gap-2"><CheckCircle className="text-green-600 w-5 h-5" />ASNT certified professionals</li>
+                      <li className="flex items-center gap-2"><CheckCircle className="text-green-600 w-5 h-5" />Safety-focused approach</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Applications</h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-center gap-2"><ArrowRight className="text-green-600 w-4 h-4" />Hard-to-reach inspections</li>
+                      <li className="flex items-center gap-2"><ArrowRight className="text-green-600 w-4 h-4" />Maintenance operations</li>
+                      <li className="flex items-center gap-2"><ArrowRight className="text-green-600 w-4 h-4" />Emergency repairs</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
         </section>
 
         {/* Materials/Metallurgy Consultancy */}
         <section className="bg-white rounded-2xl p-8">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="bg-purple-100 rounded-xl p-3">
-              <Database className="text-purple-600 w-6 h-6" />
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">Materials/Metallurgy Consultancy & Support</h2>
-          </div>
-          
-          <p className="text-gray-700 leading-relaxed mb-8">
-            Phenomenal Energy is the first Nigerian engineering company to provide comprehensive material, 
-            metallurgy, and welding handbooks tailored to any project size.
-          </p>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Left Column */}
-            <div className="space-y-6">
-              <div className="bg-purple-50 rounded-2xl p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Comprehensive Analysis</h3>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="text-purple-600 w-5 h-5" />
-                    Rigorous material requirement analysis
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="text-purple-600 w-5 h-5" />
-                    Easy-to-use procurement guides
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="text-purple-600 w-5 h-5" />
-                    Fabrication error minimization
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="text-purple-600 w-5 h-5" />
-                    Excess material reduction
-                  </li>
-                </ul>
+          <button
+            type="button"
+            className="w-full text-left flex items-center justify-between mb-4"
+            onClick={() => setShowMaterials(v => !v)}
+          >
+            <div className="flex items-center gap-4">
+              <div className="bg-purple-100 rounded-xl p-3">
+                <Database className="text-purple-600 w-6 h-6" />
               </div>
+              <h2 className="text-3xl font-bold text-gray-900">Materials/Metallurgy Consultancy & Support</h2>
             </div>
-
-            {/* Right Column */}
-            <div className="bg-blue-50 rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced Capabilities</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Cost-Effective Designs</h4>
-                  <p className="text-gray-700 text-sm">
-                    Optimize material grades while maintaining quality and performance standards.
-                  </p>
+            <span className="text-gray-500">{showMaterials ? "−" : "+"}</span>
+          </button>
+          {showMaterials && (
+            <>
+              <p className="text-gray-700 leading-relaxed mb-8">Phenomenal Energy is the first Nigerian engineering company to provide comprehensive material, metallurgy, and welding handbooks tailored to any project size.</p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Left Column */}
+                <div className="space-y-6">
+                  <div className="bg-purple-50 rounded-2xl p-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Comprehensive Analysis</h3>
+                    <ul className="space-y-3 text-gray-700">
+                      <li className="flex items-center gap-2"><CheckCircle className="text-purple-600 w-5 h-5" />Rigorous material requirement analysis</li>
+                      <li className="flex items-center gap-2"><CheckCircle className="text-purple-600 w-5 h-5" />Easy-to-use procurement guides</li>
+                      <li className="flex items-center gap-2"><CheckCircle className="text-purple-600 w-5 h-5" />Fabrication error minimization</li>
+                      <li className="flex items-center gap-2"><CheckCircle className="text-purple-600 w-5 h-5" />Excess material reduction</li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Traceability Program</h4>
-                  <p className="text-gray-700 text-sm">
-                    Even &ldquo;untraceable materials&rdquo; are managed efficiently, helping clients save money, 
-                    avoid waste, and meet stringent industry standards with confidence.
-                  </p>
+                {/* Right Column */}
+                <div className="bg-blue-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced Capabilities</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Cost-Effective Designs</h4>
+                      <p className="text-gray-700 text-sm">Optimize material grades while maintaining quality and performance standards.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Traceability Program</h4>
+                      <p className="text-gray-700 text-sm">Even &ldquo;untraceable materials&rdquo; are managed efficiently, helping clients save money, avoid waste, and meet stringent industry standards with confidence.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </>
+          )}
         </section>
 
         {/* Rotating Equipment Monitoring */}
         <section className="bg-white rounded-2xl p-8">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="bg-orange-100 rounded-xl p-3">
-              <Zap className="text-orange-600 w-6 h-6" />
+          <button
+            type="button"
+            className="w-full text-left flex items-center justify-between mb-4"
+            onClick={() => setShowRotating(v => !v)}
+          >
+            <div className="flex items-center gap-4">
+              <div className="bg-orange-100 rounded-xl p-3">
+                <Zap className="text-orange-600 w-6 h-6" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900">Rotating Equipment Condition Monitoring</h2>
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">Rotating Equipment Condition Monitoring</h2>
-          </div>
-          
-          <p className="text-gray-700 leading-relaxed mb-8">
-            Using AI, IoT, and sophisticated analytics, we offer round-the-clock rotating equipment monitoring. 
-            Our system identifies problems, predicts remaining life, and allows for timely corrective action 
-            without the need for a human-machine interface.
-          </p>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Technology Features */}
-            <div className="bg-orange-50 rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced Technology</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-orange-600 w-5 h-5" />
-                  AI-powered anomaly detection
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-orange-600 w-5 h-5" />
-                  IoT sensor integration
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-orange-600 w-5 h-5" />
-                  Sophisticated analytics
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-orange-600 w-5 h-5" />
-                  Complex algorithm processing
-                </li>
-              </ul>
-            </div>
-
-            {/* System Benefits */}
-            <div className="bg-blue-50 rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">System Benefits</h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  24/7 monitoring capabilities
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  Predictive maintenance
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  Intuitive online interface
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="text-blue-600 w-5 h-5" />
-                  Mobile accessibility
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Additional Info */}
-          <div className="mt-8 bg-green-50 rounded-2xl p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Real-Time Monitoring</h3>
-            <p className="text-gray-700">
-              Complex algorithms are used to identify anomalies, describe issues, and keep clients informed 
-              via an intuitive online and mobile interface, ensuring reliability and minimizing downtime.
-            </p>
-          </div>
+            <span className="text-gray-500">{showRotating ? "−" : "+"}</span>
+          </button>
+          {showRotating && (
+            <>
+              <p className="text-gray-700 leading-relaxed mb-8">Using AI, IoT, and sophisticated analytics, we offer round-the-clock rotating equipment monitoring. Our system identifies problems, predicts remaining life, and allows for timely corrective action without the need for a human-machine interface.</p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Technology Features */}
+                <div className="bg-orange-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced Technology</h3>
+                  <ul className="space-y-3 text-gray-700">
+                    <li className="flex items-center gap-2"><CheckCircle className="text-orange-600 w-5 h-5" />AI-powered anomaly detection</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-orange-600 w-5 h-5" />IoT sensor integration</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-orange-600 w-5 h-5" />Sophisticated analytics</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-orange-600 w-5 h-5" />Complex algorithm processing</li>
+                  </ul>
+                </div>
+                {/* System Benefits */}
+                <div className="bg-blue-50 rounded-2xl p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">System Benefits</h3>
+                  <ul className="space-y-3 text-gray-700">
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />24/7 monitoring capabilities</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />Predictive maintenance</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />Intuitive online interface</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="text-blue-600 w-5 h-5" />Mobile accessibility</li>
+                  </ul>
+                </div>
+              </div>
+              {/* Additional Info */}
+              <div className="mt-8 bg-green-50 rounded-2xl p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Real-Time Monitoring</h3>
+                <p className="text-gray-700">Complex algorithms are used to identify anomalies, describe issues, and keep clients informed via an intuitive online and mobile interface, ensuring reliability and minimizing downtime.</p>
+              </div>
+            </>
+          )}
         </section>
 
         {/* Service Features Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Project Lifecycle */}
-          <div className="bg-white rounded-2xl p-6">
-            <div className="bg-blue-100 rounded-xl p-3 w-16 h-16 flex items-center justify-center mb-4">
-              <Eye className="text-blue-600 w-8 h-8" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Full Project Lifecycle</h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              We deliver value throughout the project lifecycle — from design, procurement, installation 
-              and maintenance, ensuring comprehensive support at every stage.
-            </p>
+          {/* Project Lifecycle (Collapsible) */}
+          <div className="bg-white rounded-2xl border border-gray-200">
+            <button
+              type="button"
+              className="w-full p-6 text-left flex items-center gap-3 justify-between"
+              onClick={() => setShowLifecycle(v => !v)}
+            >
+              <div className="flex items-center gap-3">
+                <div className="bg-blue-100 rounded-xl p-3 w-16 h-16 flex items-center justify-center">
+                  <Eye className="text-blue-600 w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Full Project Lifecycle</h3>
+              </div>
+              <span className="text-gray-500">{showLifecycle ? "−" : "+"}</span>
+            </button>
+            {showLifecycle && (
+              <div className="px-6 pb-6">
+                <p className="text-gray-700 text-sm leading-relaxed">We deliver value throughout the project lifecycle — from design, procurement, installation and maintenance, ensuring comprehensive support at every stage.</p>
+              </div>
+            )}
           </div>
 
-          {/* Risk Management */}
-          <div className="bg-white rounded-2xl p-6">
-            <div className="bg-green-100 rounded-xl p-3 w-16 h-16 flex items-center justify-center mb-4">
-              <Shield className="text-green-600 w-8 h-8" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Risk Management</h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              Our solutions help clients achieve reliable performance, reduce risks, and optimize costs 
-              across operational lifecycle while maintaining safety standards.
-            </p>
+          {/* Risk Management (Collapsible) */}
+          <div className="bg-white rounded-2xl border border-gray-200">
+            <button
+              type="button"
+              className="w-full p-6 text-left flex items-center gap-3 justify-between"
+              onClick={() => setShowRisk(v => !v)}
+            >
+              <div className="flex items-center gap-3">
+                <div className="bg-green-100 rounded-xl p-3 w-16 h-16 flex items-center justify-center">
+                  <Shield className="text-green-600 w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Risk Management</h3>
+              </div>
+              <span className="text-gray-500">{showRisk ? "−" : "+"}</span>
+            </button>
+            {showRisk && (
+              <div className="px-6 pb-6">
+                <p className="text-gray-700 text-sm leading-relaxed">Our solutions help clients achieve reliable performance, reduce risks, and optimize costs across operational lifecycle while maintaining safety standards.</p>
+              </div>
+            )}
           </div>
 
-          {/* Innovation Focus */}
-          <div className="bg-white rounded-2xl p-6">
-            <div className="bg-purple-100 rounded-xl p-3 w-16 h-16 flex items-center justify-center mb-4">
-              <Zap className="text-purple-600 w-8 h-8" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Innovation Focus</h3>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              We continuously invest in new technologies including AI, IoT, and advanced analytics to 
-              improve system performance and operational efficiency.
-            </p>
+          {/* Innovation Focus (Collapsible) */}
+          <div className="bg-white rounded-2xl border border-gray-200">
+            <button
+              type="button"
+              className="w-full p-6 text-left flex items-center gap-3 justify-between"
+              onClick={() => setShowInnovation(v => !v)}
+            >
+              <div className="flex items-center gap-3">
+                <div className="bg-purple-100 rounded-xl p-3 w-16 h-16 flex items-center justify-center">
+                  <Zap className="text-purple-600 w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Innovation Focus</h3>
+              </div>
+              <span className="text-gray-500">{showInnovation ? "−" : "+"}</span>
+            </button>
+            {showInnovation && (
+              <div className="px-6 pb-6">
+                <p className="text-gray-700 text-sm leading-relaxed">We continuously invest in new technologies including AI, IoT, and advanced analytics to improve system performance and operational efficiency.</p>
+              </div>
+            )}
           </div>
         </div>
 

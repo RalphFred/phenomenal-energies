@@ -86,11 +86,10 @@ export default function ContactPage() {
       <section className="bg-blue-100 rounded-2xl py-16 px-4 lg:px-8 mb-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-semibold text-gray-900 mb-4">
-            Let&apos;s Build Something Bold Together
+            Partner With Us
           </h1>
           <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Ready to transform your facility asset integrity management? We&apos;re just a message
-            away.
+          Ready to optimize asset integrity, transform operations, and boost facility performance? Get in touch with us today!”
           </p>
         </div>
       </section>

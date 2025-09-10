@@ -26,11 +26,7 @@ export default function AssetIntegrityManagement() {
         <section className="bg-white rounded-2xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Comprehensive AIM Solutions</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Our Asset Integrity Management (AIM) services ensure that important oil and gas assets are safe, 
-            dependable, and compliant throughout their life cycle. We use a wide range of inspection methods, 
-            including conventional and advanced NDT techniques, as well as subsea and topside facility inspection 
-            equipment, which are backed by corrosion monitoring, 3D digital modelling, and cutting-edge technologies 
-            like drones, robotics, and artificial intelligence.
+          Our Asset Integrity Management (AIM) services ensure critical oil and gas assets remain safe, reliable, and compliant throughout their lifecycle. Leveraging OEM-backed expertise and advanced NDT inspections, we proactively predict and prevent failures, optimizing asset performance and longevity.”
           </p>
           <p className="text-gray-700 leading-relaxed">
             With solutions ranging from composite repairs to advanced inspection data management, we give clients 

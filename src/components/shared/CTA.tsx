@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -18,17 +19,18 @@ export default function CTA() {
             Ready to Transform Your Energy Operations?
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Let&apos;s create something exceptional, together. Whether you&apos;re optimizing existing infrastructure, 
-            implementing new safety protocols, or scaling your operations, we&apos;re the team you need.
+          Partner with us to optimize your assets/ infrastructure, enhance safety, minimize risk, and scale operations for maximum performance
           </p>
         </div>
 
         {/* Right CTA button */}
         <div className="lg:flex-shrink-0">
+          <Link href="/contact">
           <button className="group bg-primary hover:bg-primary/90 text-white font-semibold text-lg py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-3">
             Get Started
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
+          </Link>
         </div>
       </div>
 

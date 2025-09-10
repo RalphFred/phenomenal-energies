@@ -13,9 +13,6 @@ export default function AboutHero() {
           and reliability sets us apart in the energy sector.
         </p>
       </div>
-      <div className="mt-12">
-        <Image src="/images/img1.jpg" alt="About Hero" width={1000} height={1000} className="rounded-2xl w-full h-120 lg:h-150 object-cover" />
-      </div>
     </section>
   );
 }

@@ -172,27 +172,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="bg-gradient-to-r from-primary/5 to-blue-50 rounded-2xl p-6 mb-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-1">
-                Ready to work with us?
-              </h4>
-              <p className="text-gray-600 text-sm">
-                Let&apos;s discuss your project requirements.
-              </p>
-            </div>
-            <Link
-              href="/contact"
-              className="group bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 flex items-center gap-2"
-            >
-              Get Started
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
-          </div>
-        </div>
-
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">

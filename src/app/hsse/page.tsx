@@ -1,8 +1,14 @@
+"use client";
+
 import { Shield, Award, Users, Clock, CheckCircle, TrendingUp, Target, AlertTriangle, ArrowRight } from "lucide-react";
 import CTA from "@/components/shared/CTA";
+import { useState } from "react";
 
 
 export default function HssePage() {
+  const [showGuiding, setShowGuiding] = useState<boolean>(false);
+  const [showInhouse, setShowInhouse] = useState<boolean>(false);
+  const [showCerts, setShowCerts] = useState<boolean>(false);
   return (
     <div className="min-h-screen space-y-4">
       {/* Hero Section */}
@@ -15,7 +21,6 @@ export default function HssePage() {
             Health, Safety, Security & Environment
           </h1>
           <p className="text-xl text-gray-700 leading-relaxed max-w-5xl mx-auto">
-            Safety is not just a policy — it&apos;s a core value that guides every decision we make. 
             Our commitment to protecting people and the environment drives everything we do.
           </p>
         </div>
@@ -33,7 +38,6 @@ export default function HssePage() {
           </div>
           
           <p className="text-gray-700 leading-relaxed mb-6">
-            At Phenomenal Energy, safety is not just a policy — it is a core value that guides every decision we make. 
             We are committed to protecting our employees, clients, contractors, and the environment by ensuring that 
             every operation is carried out safely, responsibly, and in line with global best practices.
           </p>
@@ -64,10 +68,17 @@ export default function HssePage() {
           </div>
         </section>
 
-        {/* Guiding Principles */}
+        {/* Guiding Principles (Dropdown) */}
         <section className="bg-white rounded-2xl p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Guiding Principles</h2>
-          
+          <button
+            type="button"
+            className="w-full text-left flex items-center justify-between mb-4"
+            onClick={() => setShowGuiding(v => !v)}
+          >
+            <h2 className="text-3xl font-bold text-gray-900">Guiding Principles</h2>
+            <span className="text-gray-500">{showGuiding ? "−" : "+"}</span>
+          </button>
+          {showGuiding && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-red-50 rounded-2xl p-6">
               <div className="bg-red-100 rounded-xl p-3 w-16 h-16 flex items-center justify-center mb-4">
@@ -109,16 +120,25 @@ export default function HssePage() {
               <p className="text-gray-700 mb-4">Commitment to continuous improvement in HSSE performance</p>
             </div>
           </div>
+          )}
         </section>
 
-        {/* In-House Safety Programs */}
+        {/* In-House Safety Programs (Dropdown) */}
         <section className="bg-white rounded-2xl p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">In-House Safety Programs & Practices</h2>
-          <p className="text-gray-700 leading-relaxed mb-8">
-            We actively foster a culture of safety through robust programs and daily practices, including:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <button
+            type="button"
+            className="w-full text-left flex items-center justify-between mb-4"
+            onClick={() => setShowInhouse(v => !v)}
+          >
+            <h2 className="text-3xl font-bold text-gray-900">In-House Safety Programs & Practices</h2>
+            <span className="text-gray-500">{showInhouse ? "−" : "+"}</span>
+          </button>
+          {showInhouse && (
+          <>
+            <p className="text-gray-700 leading-relaxed mb-8">
+              We actively foster a culture of safety through robust programs and daily practices, including:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-blue-50 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Safety Inductions</h3>
               <p className="text-gray-700 mb-3">
@@ -184,13 +204,22 @@ export default function HssePage() {
                 <span className="mb-4 font-medium">Proactive risk identification</span>
               </div>
             </div>
-          </div>
+            </div>
+          </>
+          )}
         </section>
 
-        {/* Certifications & Compliance */}
+        {/* Certifications & Compliance (Dropdown) */}
         <section className="bg-white rounded-2xl p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Certifications & Compliance</h2>
-          
+          <button
+            type="button"
+            className="w-full text-left flex items-center justify-between mb-4"
+            onClick={() => setShowCerts(v => !v)}
+          >
+            <h2 className="text-3xl font-bold text-gray-900">Certifications & Compliance</h2>
+            <span className="text-gray-500">{showCerts ? "−" : "+"}</span>
+          </button>
+          {showCerts && (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* ISO Certification */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6">
@@ -245,6 +274,7 @@ export default function HssePage() {
               </div>
             </div>
           </div>
+          )}
         </section>
 
         {/* Safety Performance */}

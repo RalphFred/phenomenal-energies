@@ -8,13 +8,12 @@ export default function ServicesHero() {
           Our Services
         </h1>
         <p className="lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-          Comprehensive energy infrastructure solutions that ensure safety, reliability, and operational excellence. 
-          From asset integrity management to advanced inspection services, we deliver results that exceed expectations.
+        Delivering Comprehensive energy infrastructure solutions that ensure safety, reliability, and operational excellence. From asset integrity management to advanced inspection services, we deliver results that exceed expectations
         </p>
       </div>
       <div className="mt-12">
         <Image 
-          src="/images/img4.jpg" 
+          src="/images/img5.jpg" 
           alt="Phenomenal Energy Services" 
           width={1000} 
           height={1000} 

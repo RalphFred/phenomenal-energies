@@ -26,7 +26,7 @@ export default function ServiceServices() {
             to manage asset risks and extend operational life, whether onshore,
             offshore, or subsea.
           </p>
-          <Link href="/services/inspection-services">
+          <Link href="/services/asset-integrity-management">
             <button className="w-full bg-primary text-white font-semibold py-3 px-6 rounded-xl hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
               Read More
             </button>
