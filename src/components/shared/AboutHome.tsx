@@ -7,7 +7,7 @@ export default function AboutHome() {
     <section className="flex items-stretch gap-2 max-md:flex-col-reverse lg:gap-4 lg:h-[75vh]">
       <div className="w-full lg:h-full lg:w-1/2 md:h-full">
         <Image
-          src="/images/img3.jpg"
+          src="/images/img3.png"
           className="rounded-2xl w-full h-full object-cover pointer-events-none"
           alt="Hero"
           width={500}

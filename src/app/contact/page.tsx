@@ -250,7 +250,7 @@ export default function ContactPage() {
           {/* Right Column - Company Image/Info */}
           <div className="">
             <Image
-              src="/images/img2.jpg"
+              src="/images/img2.png"
               alt="Contact"
               width={1000}
               height={1000}
