@@ -8,7 +8,7 @@ export default function Why() {
           Why Choose Us
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Trusted expertise that delivers exceptional results
+        Experience,  Ease of mobilization , cost competitiveness
         </p>
       </div>
 

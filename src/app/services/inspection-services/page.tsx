@@ -62,34 +62,36 @@ export default function InspectionServices() {
           </p>
 
           {/* Tabs header */}
-          <div className="inline-flex rounded-xl border border-gray-200 overflow-hidden mb-6">
-            <button
-              type="button"
-              onClick={() => setActiveTab("vendor")}
-              className={`px-4 py-2 text-sm font-medium transition-colors ${
-                activeTab === "vendor" ? "bg-primary text-white" : "bg-white text-gray-700 hover:bg-gray-50"
-              }`}
-            >
-              Vendor & Manufacturing
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveTab("qa")}
-              className={`px-4 py-2 text-sm font-medium transition-colors border-l border-gray-200 ${
-                activeTab === "qa" ? "bg-primary text-white" : "bg-white text-gray-700 hover:bg-gray-50"
-              }`}
-            >
-              Quality Assurance
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveTab("global")}
-              className={`px-4 py-2 text-sm font-medium transition-colors border-l border-gray-200 ${
-                activeTab === "global" ? "bg-primary text-white" : "bg-white text-gray-700 hover:bg-gray-50"
-              }`}
-            >
-              Global Coverage
-            </button>
+          <div className="w-full overflow-x-auto mb-6">
+            <div className="inline-flex rounded-xl border border-gray-200 min-w-max">
+              <button
+                type="button"
+                onClick={() => setActiveTab("vendor")}
+                className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap ${
+                  activeTab === "vendor" ? "bg-primary text-white" : "bg-white text-gray-700 hover:bg-gray-50"
+                }`}
+              >
+                Vendor & Manufacturing
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveTab("qa")}
+                className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-colors border-l border-gray-200 whitespace-nowrap ${
+                  activeTab === "qa" ? "bg-primary text-white" : "bg-white text-gray-700 hover:bg-gray-50"
+                }`}
+              >
+                Quality Assurance
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveTab("global")}
+                className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium transition-colors border-l border-gray-200 whitespace-nowrap ${
+                  activeTab === "global" ? "bg-primary text-white" : "bg-white text-gray-700 hover:bg-gray-50"
+                }`}
+              >
+                Global Coverage
+              </button>
+            </div>
           </div>
 
           {/* Tabs content */}

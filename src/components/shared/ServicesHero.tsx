@@ -8,7 +8,7 @@ export default function ServicesHero() {
           Our Services
         </h1>
         <p className="lg:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-        Delivering Comprehensive energy infrastructure solutions that ensure safety, reliability, and operational excellence. From asset integrity management to advanced inspection services, we deliver results that exceed expectations
+        End-to-End Engineering & Integrity Services
         </p>
       </div>
       <div className="mt-12">

@@ -31,8 +31,7 @@ export default function Footer() {
               Phenomenal Energy
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
-              Engineering Safety. Powering Reliability. Trusted solutions for
-              oil, gas & beyond.
+            Proactively predicting failures, minimizing risk, maximizing value
             </p>
             <div className="flex gap-3">
               <a

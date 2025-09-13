@@ -4,45 +4,38 @@ import { Star, Quote } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      position: "Operations Manager",
-      company: "Global Energy Corp",
-      content: "Phenomenal Energy delivered exceptional results on our offshore inspection project. Their expertise and attention to detail exceeded our expectations.",
+      name: "Paul Osarinmwian",
+      position: "Principal Quality Lead",
+      company: "SPDC",
+      content: "It's inspiring to see a local contractor standing tall among multinational companies on international projects, showcasing excellence and quality standard.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      position: "Technical Director",
-      company: "Pacific Oil & Gas",
-      content: "The team's innovative approach to asset integrity management has significantly improved our operational efficiency and safety standards.",
-      rating: 5
-    },
-    {
-      name: "David Rodriguez",
+      name: "Ephraim Anthony",
       position: "Project Manager",
-      company: "Atlantic Petroleum",
-      content: "Outstanding service quality and professional execution. They consistently deliver on time and within budget while maintaining the highest safety standards.",
+      company: "NE Williams Nigeria Limited",
+      content: "Good quality service with appreciable relationship. Job executed timely and with great professionalism",
       rating: 5
     },
     {
-      name: "Lisa Thompson",
-      position: "HSE Manager",
-      company: "Northern Energy",
-      content: "Their comprehensive inspection services and technical expertise have been invaluable to our compliance and risk management efforts.",
+      name: "Tonabara Yalah",
+      position: "Principal QAQC Lead",
+      company: "SPDC",
+      content: "TPI personnel has been very excellent, identifying and reporting findings as observed and providing recommendations for close out.",
       rating: 5
     },
     {
-      name: "Robert Wilson",
-      position: "Engineering Lead",
-      company: "Southern Gas",
-      content: "Phenomenal Energy's engineering solutions are cutting-edge and practical. They understand our industry challenges and deliver innovative solutions.",
+      name: "Olalekan Adeaga",
+      position: "Maintenance Superintendent",
+      company: "Esso Exploration and Production Nigeria Limited",
+      content: "Clear demonstration of technical capacity and professional communication are key attributes that enhanced the success of this project",
       rating: 5
     },
     {
-      name: "Amanda Foster",
-      position: "Asset Manager",
-      company: "Western Resources",
-      content: "Reliable, professional, and technically excellent. Their asset integrity management services have extended our equipment lifespan significantly.",
+      name: "Ememandu Abraham Chinedu",
+      position: "Business Manager",
+      company: "Elper Oilfield Engineering Nigeria Limited",
+      content: "The response time from Phenomenal Energy is perfect. The level of professional advice based on experience is highly appreciated",
       rating: 5
     }
   ];
@@ -54,7 +47,7 @@ export default function Testimonials() {
           What Our Clients Say
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Trusted by industry leaders worldwide
+          Proudly Nigerian,  globally competitive
         </p>
       </div>
 
