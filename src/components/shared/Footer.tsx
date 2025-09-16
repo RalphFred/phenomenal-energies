@@ -30,7 +30,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
               Phenomenal Energy
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            <p className="text-gray-600 text-sm leading-relaxed mb-4 font-bold">
             Proactively predicting failures, minimizing risk, maximizing value
             </p>
             <div className="flex gap-3">
