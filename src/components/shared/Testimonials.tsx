@@ -6,7 +6,7 @@ export default function Testimonials() {
     {
       name: "Paul Osarinmwian",
       position: "Principal Quality Lead",
-      company: "SPDC",
+      company: "Renaissance Energy Africa",
       content: "It's inspiring to see a local contractor standing tall among multinational companies on international projects, showcasing excellence and quality standard.",
       rating: 5
     },
@@ -20,14 +20,14 @@ export default function Testimonials() {
     {
       name: "Tonabara Yalah",
       position: "Principal QAQC Lead",
-      company: "SPDC",
-      content: "TPI personnel has been very excellent, identifying and reporting findings as observed and providing recommendations for close out.",
+      company: "Shell",
+      content: "Third Party Inspection personnel has been very excellent, identifying and reporting findings as observed and providing recommendations for close out.",
       rating: 5
     },
     {
       name: "Olalekan Adeaga",
       position: "Maintenance Superintendent",
-      company: "Esso Exploration and Production Nigeria Limited",
+      company: "ExxonMobil",
       content: "Clear demonstration of technical capacity and professional communication are key attributes that enhanced the success of this project",
       rating: 5
     },
@@ -79,6 +79,9 @@ export default function Testimonials() {
                 <h4 className="font-semibold text-gray-900 text-lg">
                   {testimonial.name}
                 </h4>
+                <p className="text-gray-600 text-sm mt-1">
+                  {testimonial.position}, {testimonial.company}
+                </p>
               </div>
             </div>
           ))}

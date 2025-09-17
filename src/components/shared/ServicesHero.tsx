@@ -13,7 +13,7 @@ export default function ServicesHero() {
       </div>
       <div className="mt-12">
         <Image 
-          src="/images/img5.png" 
+          src="/images/img5.jpg" 
           alt="Phenomenal Energy Services" 
           width={1000} 
           height={1000} 

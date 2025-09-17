@@ -31,7 +31,7 @@ export default function Footer() {
               Phenomenal Energy
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-4 font-bold">
-            Proactively predicting failures, minimizing risk, maximizing value
+            Proactively predicting failures, minimizing risk and maximizing value.
             </p>
             <div className="flex gap-3">
               <a
