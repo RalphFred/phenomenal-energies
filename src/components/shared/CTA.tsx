@@ -15,10 +15,7 @@ export default function CTA() {
       <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
         {/* Left content */}
         <div className="flex-1 max-w-3xl">
-          <h2 className="text-xl lg:text-3xl font-semibold text-white mb-6 leading-tight">
-            Ready to Transform Your Energy Operations?
-          </h2>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-gray-300 leading-relaxed text-xl">
           Partner with us to optimize your assets/ infrastructure, enhance safety, minimize risk, and scale operations for maximum performance
           </p>
         </div>
