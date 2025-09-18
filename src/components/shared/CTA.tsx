@@ -16,7 +16,7 @@ export default function CTA() {
         {/* Left content */}
         <div className="flex-1 max-w-3xl">
           <p className="text-gray-300 leading-relaxed text-xl">
-          Partner with us to optimize your assets/ infrastructure, enhance safety, minimize risk, and scale operations for maximum performance
+          Partner with us to optimize your assets/infrastructure, enhance safety, minimize risk, and scale operations for maximum performance
           </p>
         </div>
 

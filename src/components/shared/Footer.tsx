@@ -20,16 +20,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
               <Image
-                src="/images/logo.jpeg"
+                src="/images/image.png"
                 alt="Phenomenal Energy Logo"
-                width={48}
-                height={48}
-                className="w-12 h-12"
+                width={120}
+                height={40}
+                className="w-24 h-12 z-60"
               />
             </Link>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              Phenomenal Energy
-            </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-4 font-bold">
             Proactively predicting failures, minimizing risk and maximizing value.
             </p>

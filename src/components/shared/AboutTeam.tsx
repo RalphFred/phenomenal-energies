@@ -14,7 +14,7 @@ export default function AboutTeam() {
     {
       name: "Engr. Onyema Abel Nwobodo",
       position: "Managing Director",
-      bio: "Chemical Engineering graduate from University of Benin with MSc in Asset Integrity Management from Robert Gordon University Scotland and MBA from Lagos Business School. 10 years with ExxonMobil Nigeria managing facility integrity operations. Member of COREN, NSE, SPE, NACE, and ASME.",
+      bio: "Chemical Engineering graduate from University of Benin with MSc in Asset Integrity Management from Robert Gordon University Scotland and MBA and Management from Lagos Business School and Harvard Business School, respectively. Spent 10 years with ExxonMobil Nigeria managing facility integrity operations. Member of COREN, NSE, SPE, NACE, and ASME.",
       image: "/images/leader2.jpg",
       linkedin: "#",
       email: "abel@phenomenalenergy.com"
