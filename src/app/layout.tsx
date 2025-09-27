@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Phenomenal Energy",
-  description: "Trusted Solutions for Oil, Gas & Beyond.",
+  description: "Asset Integrity Management Professionals",
 };
 
 export default function RootLayout({
