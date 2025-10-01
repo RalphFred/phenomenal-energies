@@ -1,6 +1,53 @@
+"use client";
+
 import { Award, Shield, Users, Clock, Zap, Globe } from "lucide-react";
+import { useState } from "react";
+
+const whyChooseUsData = [
+  {
+    id: "innovation",
+    title: "Innovation",
+    icon: Zap,
+    description: "Cutting-edge technologies and forward-thinking solutions that keep you ahead of industry standards."
+  },
+  {
+    id: "excellence",
+    title: "Excellence",
+    icon: Award,
+    description: "Unwavering commitment to quality and precision in each project, delivering results that exceed expectations."
+  },
+  {
+    id: "global-reach",
+    title: "Global Reach",
+    icon: Globe,
+    description: "Worldwide presence and local expertise to serve your needs wherever your operations take you."
+  },
+  {
+    id: "reliability",
+    title: "Reliability",
+    icon: Shield,
+    description: "Proven track record of consistent performance and dependable service delivery across all operations."
+  },
+  {
+    id: "expertise",
+    title: "Expertise",
+    icon: Users,
+    description: "Deep industry knowledge and technical proficiency backed by years of specialized experience."
+  },
+  {
+    id: "timely-delivery",
+    title: "Timely Delivery",
+    icon: Clock,
+    description: "Efficient project execution and on-time delivery that keeps your operations running smoothly."
+  }
+];
 
 export default function Why() {
+  const [activeTab, setActiveTab] = useState("innovation");
+  
+  const activeItem = whyChooseUsData.find(item => item.id === activeTab);
+  const IconComponent = activeItem?.icon;
+
   return (
     <section className="bg-white rounded-2xl py-12 px-4 lg:px-8">
       <div className="text-center mb-16">
@@ -8,91 +55,41 @@ export default function Why() {
           Why Choose Us
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        Experience,  Ease of mobilization , cost competitiveness
+          Experience, Ease of mobilization, cost competitiveness
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
-        {/* Innovation */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Zap className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Innovation</h3>
-          <p className="text-gray-700 leading-relaxed">
-            Cutting-edge technologies and forward-thinking solutions that keep
-            you ahead of industry standards.
-          </p>
-        </div>
-        
-        {/* Excellence */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Award className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Excellence</h3>
-          <p className="text-gray-700 leading-relaxed">
-            Unwavering commitment to quality and precision in each project,
-            delivering results that exceed expectations
-          </p>
-        </div>
-
-         {/* Global Reach */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Globe className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Global Reach
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            Worldwide presence and local expertise to serve your needs wherever
-            your operations take you.
-          </p>
-        </div>
-        
-        {/* Reliability */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Shield className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Reliability</h3>
-          <p className="text-gray-700 leading-relaxed">
-            Proven track record of consistent performance and dependable service
-            delivery across all operations.
-          </p>
-        </div>
-
-        {/* Expertise */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Users className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Expertise</h3>
-          <p className="text-gray-700 leading-relaxed">
-            Deep industry knowledge and technical proficiency backed by years of
-            specialized experience.
-          </p>
-        </div>
-
-        
-
-       
-
-        {/* Timely Delivery */}
-        <div className="text-center group">
-          <div className="bg-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <Clock className="text-white w-8 h-8" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Timely Delivery
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            Efficient project execution and on-time delivery that keeps your
-            operations running smoothly.
-          </p>
-        </div>
+      {/* Tab Navigation */}
+      <div className="flex flex-wrap justify-center gap-4 mb-12">
+        {whyChooseUsData.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => setActiveTab(item.id)}
+            className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              activeTab === item.id
+                ? "bg-primary text-white shadow-lg"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            }`}
+          >
+            {item.title}
+          </button>
+        ))}
       </div>
+
+      {/* Active Tab Content */}
+      {activeItem && (
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="bg-primary rounded-2xl p-6 w-24 h-24 flex items-center justify-center mx-auto mb-8 transform transition-transform duration-300 hover:scale-110">
+            {IconComponent && <IconComponent className="text-white w-12 h-12" />}
+          </div>
+          <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            {activeItem.title}
+          </h3>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            {activeItem.description}
+          </p>
+        </div>
+      )}
     </section>
   );
 }

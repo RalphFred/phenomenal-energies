@@ -18,7 +18,7 @@ export default function Testimonials() {
       rating: 5
     },
     {
-      name: "Tonabara Yalah",
+      name: "Tonbara Yalah",
       position: "Principal QAQC Lead",
       company: "Shell",
       content: "Third Party Inspection personnel has been very excellent, identifying and reporting findings as observed and providing recommendations for close out.",
