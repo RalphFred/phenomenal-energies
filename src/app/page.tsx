@@ -10,8 +10,8 @@ export default function Home() {
    <div className="space-y-4">
     <Hero />
     <Clients />
-    <AboutHome />
-    <ServicesHome />
+    {/* <AboutHome />
+    <ServicesHome /> */}
     <Why />
     <Testimonials />
     <CTA />

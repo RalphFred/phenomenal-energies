@@ -89,7 +89,7 @@ export default function ContactPage() {
             Partner With Us
           </h1>
           <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          Ready to optimize asset integrity, transform operations, and boost facility performance? Get in touch with us today!”
+            Partner with us to maximize your facility asset integrity and enhance operational efficiency.
           </p>
         </div>
       </section>

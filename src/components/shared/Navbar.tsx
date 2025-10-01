@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/hsse", label: "HSSE" },
   { href: "/contact", label: "Contact" },
@@ -31,7 +31,7 @@ export default function NavBar() {
           alt="Logo"
           width={120}
           height={40}
-          className="w-24 h-12 z-60"
+          className="w-32 h-16 z-60"
           />
       </Link>
 
