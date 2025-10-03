@@ -12,7 +12,7 @@ export default function AboutPage() {
             <AboutBio />
             <AboutTeam />
             <Why />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <CTA />
         </div>
     )
