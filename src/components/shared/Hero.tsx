@@ -23,10 +23,24 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="w-full lg:h-full lg:w-1/2 md:h-full">
+        <div className="w-full lg:h-full lg:w-1/2 md:h-full space-y-2">
           <Image
             src="/images/hero.png"
             className="rounded-2xl w-full h-full object-cover pointer-events-none"
+            alt="Hero"
+            width={500}
+            height={500}
+          />
+          <Image
+            src="/images/img3.png"
+            className="rounded-2xl w-full h-full object-cover pointer-events-none block lg:hidden"
+            alt="Hero"
+            width={500}
+            height={500}
+          />
+          <Image
+            src="/images/img2.png"
+            className="rounded-2xl w-full h-full object-cover pointer-events-none block lg:hidden"
             alt="Hero"
             width={500}
             height={500}
