@@ -73,7 +73,7 @@ Timestamp: ${new Date().toLocaleString()}
     // Send email
     const info = await transporter.sendMail({
       from: `"Phenomenal Energy Contact Form" <${process.env.SMTP_USER || 'raphaelgbaorun@gmail.com'}>`,
-      to: 'info@phenomenalenergy.com',
+      to: 'info@phenomenalenergyng.com',
       subject: subject,
       text: textContent,
       html: htmlContent,
