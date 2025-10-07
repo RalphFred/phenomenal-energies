@@ -1,9 +1,25 @@
+"use client";
+
 import { ArrowRightIcon } from "lucide-react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 import Image from "next/image";
 import Link from "next/link";
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 export default function Hero() {
+    const heroImages = [
+        { src: "/images/hero.png", alt: "Hero Image 1" },
+        { src: "/images/hero1.jpg", alt: "Hero Image 2" },
+        { src: "/images/hero2.jpg", alt: "Hero Image 3" },
+        { src: "/images/img3.png", alt: "Hero Image 4" },
+        { src: "/images/img2.png", alt: "Hero Image 5" },
+    ];
+
     return (
         <section className="lg:h-[85vh] flex items-center max-lg:flex-col gap-2 lg:gap-4">
         <div className="bg-white rounded-2xl p-8 px-4 py-10 md:px-12 lg:pt-18 lg:px-16 lg:w-1/2 h-full  grid place-content-center">
@@ -23,28 +39,34 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="w-full lg:h-full lg:w-1/2 md:h-full space-y-2">
-          <Image
-            src="/images/hero.png"
-            className="rounded-2xl w-full h-full object-cover pointer-events-none"
-            alt="Hero"
-            width={500}
-            height={500}
-          />
-          <Image
-            src="/images/img3.png"
-            className="rounded-2xl w-full h-full object-cover pointer-events-none block lg:hidden"
-            alt="Hero"
-            width={500}
-            height={500}
-          />
-          <Image
-            src="/images/img2.png"
-            className="rounded-2xl w-full h-full object-cover pointer-events-none block lg:hidden"
-            alt="Hero"
-            width={500}
-            height={500}
-          />
+        <div className="w-full lg:h-full lg:w-1/2 md:h-full">
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            spaceBetween={0}
+            slidesPerView={1}
+            pagination={{ 
+              clickable: true,
+              dynamicBullets: true 
+            }}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            className="w-full h-full rounded-2xl"
+          >
+            {heroImages.map((image, index) => (
+              <SwiperSlide key={index}>
+                <Image
+                  src={image.src}
+                  className="rounded-2xl w-full h-full object-cover pointer-events-none"
+                  alt={image.alt}
+                  width={500}
+                  height={500}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
     )

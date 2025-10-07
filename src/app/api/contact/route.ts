@@ -4,10 +4,10 @@ import nodemailer from 'nodemailer';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, phone, service, message } = body;
+    const { name, businessName, email, phone, message } = body;
 
     // Validate required fields
-    if (!firstName || !lastName || !email || !message) {
+    if (!name || !email || !phone || !message) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     });
 
     // Email content
-    const subject = `Contact Form Submission - ${service || 'General Inquiry'}`;
+    const subject = `Contact Form Submission - ${businessName || 'General Inquiry'}`;
     const htmlContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px;">
@@ -35,10 +35,10 @@ export async function POST(request: NextRequest) {
         
         <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <h3 style="color: #1e40af; margin-top: 0;">Contact Details</h3>
-          <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Business Name:</strong> ${businessName || 'Not provided'}</p>
           <p><strong>Email:</strong> <a href="mailto:${email}" style="color: #2563eb;">${email}</a></p>
-          <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-          <p><strong>Service Interested In:</strong> ${service || 'Not specified'}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
         </div>
         
         <div style="background-color: #ffffff; padding: 20px; border: 1px solid #e5e7eb; border-radius: 8px;">
@@ -57,10 +57,10 @@ export async function POST(request: NextRequest) {
 New Contact Form Submission
 
 Contact Details:
-- Name: ${firstName} ${lastName}
+- Name: ${name}
+- Business Name: ${businessName || 'Not provided'}
 - Email: ${email}
-- Phone: ${phone || 'Not provided'}
-- Service Interested In: ${service || 'Not specified'}
+- Phone: ${phone}
 
 Message:
 ${message}

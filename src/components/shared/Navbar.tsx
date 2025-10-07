@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/hsse", label: "HSSE" },
-  { href: "/contact", label: "Contact" },
+  // { href: "/careers", label: "Careers" },
 ];
 
 export default function NavBar() {
@@ -56,7 +56,7 @@ export default function NavBar() {
 
       {/* Desktop Button */}
       <Link href="/contact/#contact" className="px-8 py-3 rounded-xl bg-primary text-white font-semibold hidden lg:block">
-        Work with us
+        Contact Us
       </Link>
 
       {/* Mobile Menu Button */}
@@ -109,7 +109,7 @@ export default function NavBar() {
             href="/contact/#contact"
             onClick={() => setOpen(false)}
           >
-            Work with us
+            Contact Us
           </Link>
         </div>
       </div>
