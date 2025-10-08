@@ -31,7 +31,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-6 max-md:w-full md:justify-start justify-around my-4 md:my-6">
             <Link href="/contact/#contact" className="flex justify-center items-center gap-2 bg-primary text-white px-8 py-3 font-semibold rounded-lg">
-              Get started
+              Contact Us
               <ArrowRightIcon className="w-5 h-5 transition-transform duration-300 group-hover/linkbtn:translate-x-0.5" />
             </Link>
             <Link href="/services" className="flex justify-center items-center text-primary font-semibold px-8 py-3 rounded-lg border border-primary">

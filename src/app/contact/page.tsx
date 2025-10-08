@@ -18,10 +18,10 @@ import { useState } from "react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: "",
-    businessName: "",
+    fullName: "",
     email: "",
     phone: "",
+    service: "",
     message: "",
   });
 
@@ -60,10 +60,10 @@ export default function ContactPage() {
         
         // Reset form
         setFormData({
-          name: "",
-          businessName: "",
+          fullName: "",
           email: "",
           phone: "",
+          service: "",
           message: "",
         });
       } else {
@@ -104,35 +104,20 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
-                  htmlFor="name"
+                  htmlFor="fullName"
                   className="block font-medium mb-2"
                 >
-                  Name *
+                  Full name *
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  id="fullName"
+                  name="fullName"
+                  value={formData.fullName}
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="John Doe"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="businessName" className="block font-medium mb-2">
-                  Business Name
-                </label>
-                <input
-                  type="text"
-                  id="businessName"
-                  name="businessName"
-                  value={formData.businessName}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="Your Company Name"
                 />
               </div>
 
@@ -148,13 +133,13 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="janedoe@company.com"
+                  placeholder="janedoe@xmail.com"
                 />
               </div>
 
               <div>
                 <label htmlFor="phone" className="block font-medium mb-2">
-                  Phone number *
+                  Phone number
                 </label>
                 <input
                   type="tel"
@@ -162,15 +147,36 @@ export default function ContactPage() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  placeholder="+234 812 345 6789"
+                  placeholder="08123456789"
                 />
               </div>
 
               <div>
+                <label htmlFor="service" className="block font-medium mb-2">
+                  Services interested in
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                >
+                  <option value="">Please Select one ---</option>
+                  <option value="inspection">Inspection Services</option>
+                  <option value="hsse">HSSE</option>
+                  <option value="accounting">Accounting</option>
+                  <option value="business-development">Business Development</option>
+                  <option value="engineering">
+                    Engineering & Technical Services
+                  </option>
+                </select>
+              </div>
+
+              <div>
                 <label htmlFor="message" className="block font-medium mb-2">
-                  Short message *
+                  Your message *
                 </label>
                 <textarea
                   id="message"
@@ -180,7 +186,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
-                  placeholder="Tell us briefly about your project or inquiry..."
+                  placeholder="Tell us about your project..."
                 ></textarea>
               </div>
 

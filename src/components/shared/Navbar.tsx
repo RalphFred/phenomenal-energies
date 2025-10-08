@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/hsse", label: "HSSE" },
-  // { href: "/careers", label: "Careers" },
+  { href: "/work-with-us", label: "Work With Us" },
 ];
 
 export default function NavBar() {
