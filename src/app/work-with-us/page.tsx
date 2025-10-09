@@ -13,7 +13,6 @@ import {
   Briefcase,
   CheckCircle,
 } from "lucide-react";
-import Image from "next/image";
 
 export default function WorkWithUsPage() {
   const benefits = [
@@ -73,7 +72,7 @@ export default function WorkWithUsPage() {
                 Why Choose Phenomenal Energy?
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                We're not just building careers; we're building the future. 
+                We&apos;re not just building careers; we&apos;re building the future. 
                 Join us and be part of something extraordinary.
               </p>
             </div>
@@ -105,8 +104,8 @@ export default function WorkWithUsPage() {
               Ready to Join Our Team?
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We're always looking for talented individuals who share our passion for excellence in the energy sector. 
-              If you're interested in working with us, we'd love to hear from you.
+              We&apos;re always looking for talented individuals who share our passion for excellence in the energy sector. 
+              If you&apos;re interested in working with us, we&apos;d love to hear from you.
             </p>
             
             <div className="bg-blue-50 rounded-2xl p-8 mb-8">
@@ -114,8 +113,8 @@ export default function WorkWithUsPage() {
                 How to Apply
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Send us an email with your CV/Resume and tell us about the role you're interested in. 
-                We'll review your application and get back to you as soon as possible.
+                Send us an email with your CV/Resume and tell us about the role you&apos;re interested in. 
+                We&apos;ll review your application and get back to you as soon as possible.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -151,7 +150,7 @@ export default function WorkWithUsPage() {
               </div>
               <div className="bg-gray-50 rounded-lg p-6">
                 <CheckCircle className="w-8 h-8 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold text-gray-900 mb-2">We'll Review</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">We&apos;ll Review</h4>
                 <p className="text-sm text-gray-600">Our team will get back to you soon</p>
               </div>
             </div>
