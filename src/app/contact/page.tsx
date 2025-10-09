@@ -24,7 +24,6 @@ export default function ContactPage() {
     service: "",
     message: "",
   });
-∏
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [statusMessage, setStatusMessage] = useState('');
