@@ -24,7 +24,7 @@ export default function ContactPage() {
     service: "",
     message: "",
   });
-
+∏
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [statusMessage, setStatusMessage] = useState('');
@@ -150,28 +150,6 @@ export default function ContactPage() {
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="08123456789"
                 />
-              </div>
-
-              <div>
-                <label htmlFor="service" className="block font-medium mb-2">
-                  Services interested in
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                >
-                  <option value="">Please Select one ---</option>
-                  <option value="inspection">Inspection Services</option>
-                  <option value="hsse">HSSE</option>
-                  <option value="accounting">Accounting</option>
-                  <option value="business-development">Business Development</option>
-                  <option value="engineering">
-                    Engineering & Technical Services
-                  </option>
-                </select>
               </div>
 
               <div>

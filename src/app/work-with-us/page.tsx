@@ -119,21 +119,12 @@ export default function WorkWithUsPage() {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
-                  href="mailto:info@phenomenalenergyng.com?subject=Job Application - [Your Role]&body=Dear Phenomenal Energy Team,%0A%0AI am writing to express my interest in joining your team. Please find my CV attached.%0A%0ARole I'm interested in: [Please specify]%0A%0AThank you for your consideration.%0A%0ABest regards,"
+                  href="mailto:info@phenomenalenergyng.com"
                   className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg transition-colors flex items-center gap-2 font-semibold"
                 >
                   <Mail className="w-5 h-5" />
                   Send Application Email
                 </a>
-                <div className="text-gray-600">
-                  or email us directly at: 
-                  <a 
-                    href="mailto:info@phenomenalenergyng.com" 
-                    className="text-primary hover:text-primary/80 font-semibold ml-1"
-                  >
-                    info@phenomenalenergyng.com
-                  </a>
-                </div>
               </div>
             </div>
 
